@@ -207,6 +207,7 @@ const nuevoPassword = async (req,res) => {
 
     
     const veterinario = await Veterinario.findById(req.params.id);
+    console.log(veterinario)
 
     if(!veterinario){
         const error = new Error('Ocurrio un Error')
